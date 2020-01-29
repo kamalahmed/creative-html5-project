@@ -19,6 +19,7 @@
   background: #e80707;
   padding-top: 50px;
   padding-left: 50px;
+  position: relative;
 }
 
 .left-col .menu-icon {
@@ -30,6 +31,18 @@
   width: 100px;
   margin-left: 50px;
   margin-top: -15px;
+}
+
+.left-col .line-shape {
+  right: 0;
+  background-color: #fff;
+}
+
+.line-shape {
+  position: absolute;
+  top: 180px;
+  height: 20px;
+  width: 280px;
 }
 
 .right-col {
@@ -69,5 +82,18 @@
   text-decoration: none;
   font-size: 12px;
   font-weight: 900;
+}
+
+.right-col .line-shape {
+  left: 0;
+  background-color: #e80707;
+}
+
+.right-col .line-shape span {
+  position: absolute;
+  height: 100%;
+  width: 6px;
+  left: calc(100% + 7px);
+  background-color: inherit;
 }
 /*# sourceMappingURL=style.css.map */
