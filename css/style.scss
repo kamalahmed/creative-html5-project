@@ -33,7 +33,79 @@
     right: 0;
     background-color: #fff;
   }
+
+  .quotation {
+    position: absolute;
+    color: #d6d0d0;
+    top: 200px;
+    right: 20px;
+    width: 400px;
+    
+    p {
+      margin-top: 10px;
+    }
+    .right-quote{
+      position: absolute;
+      right: 20px;
+    }
+  }
+
+  .small-fashion-image{
+    position: absolute;
+    bottom: 145px;
+    right: -45px;
+    .line-shape {
+      background-color: black;
+      height: 80px;
+      width: 2px;
+      right: -50px;
+      top: auto;
+      bottom: 20px;
+      
+    }
+    .pagination-pointer {
+      position: absolute;
+      color: black;
+      right: -69px;
+      bottom: 120px;
+      transform: rotate(-90deg);
+    }
+  }
+
+  // arrow navigation top
+  .small-fashion-image::before {
+    content: '\276f';
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    bottom: 120px;
+    font-size: 28px;
+    right: 350px;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    text-align: center;
+    transform: rotate(-90deg);
+  }
+
+  // arrow navigation bottom
+  .small-fashion-image::after {
+    content: '\276f';
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    bottom: 50px;
+    font-size: 28px;
+    right: 350px;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    text-align: center;
+    transform: rotate(90deg);
+  }
+
 }
+
 .line-shape {
   position: absolute;
   top: 180px;
@@ -75,13 +147,13 @@
   .line-shape {
     left: 0;
     background-color: #e80707;
-    
+
     span {
-        position: absolute;
-        height: 100%;
-        width: 6px;
-        left: calc(100% + 7px);
-        background-color: inherit;
+      position: absolute;
+      height: 100%;
+      width: 6px;
+      left: calc(100% + 7px);
+      background-color: inherit;
     }
   }
 }
